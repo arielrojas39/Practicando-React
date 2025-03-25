@@ -1,0 +1,14 @@
+.custom-button{
+    padding:10px 20px;
+    background-color: grey;
+    border-radius: 10px;
+    transition: ease 1s;   
+}
+.custom-button:hover{
+    background: linear-gradient(45deg, #7785AC, #9AC6C5, #A5E6BA);
+    padding:20px 40px;
+    cursor: pointer;
+    border: 0.1rem solid black;
+    transition: ease-in-out 0.5s;  
+    color: black;
+}
