@@ -17,16 +17,14 @@ import './App.css'
 */ 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const countMore = () => {
-    setCount((count) => count + 1)
-  }
+  const [count1, setCount1] = useState(0)
+  const [count2, setCount2] = useState(0)
 
   return (
     <>
       <div className="container">
-        <Button label={`Count is ${count}`} parentMethod={countMore}></Button>
-        <Button label={`Apreta para sumar bigote de foca ${count}`} parentMethod={countMore}></Button>
+        <Button label={`Count is ${count1}`} parentMethod={()=>{setCount1(count1+1)}}></Button>
+        <Button label={`Apreta para sumar bigote de foca ${count2}`} parentMethod={()=>{setCount2(count2+1)}}></Button>
       </div>
     </>
   )
