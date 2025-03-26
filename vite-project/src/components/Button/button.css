@@ -1,14 +1,22 @@
 .custom-button{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;   
+    margin:10px;
     padding:10px 20px;
-    background-color: grey;
+    background: linear-gradient(45deg, #3D2645, #832161, #832161, #3D2645);
     border-radius: 10px;
-    transition: ease 1s;   
+    transition: ease 1s;  
+    border-style:none; 
 }
 .custom-button:hover{
-    background: linear-gradient(45deg, #7785AC, #9AC6C5, #A5E6BA);
-    padding:20px 40px;
+    background: linear-gradient(45deg,#DA4167, #832161, #DA4167);
+    width: 410px;
+    height: 60px;
     cursor: pointer;
-    border: 0.1rem solid black;
     transition: ease-in-out 0.5s;  
     color: black;
 }
